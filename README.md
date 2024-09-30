@@ -6,7 +6,7 @@ In this assignment, you will implement a search-based planner to find a plan to 
 
 End of the Track is a 2-player board game played on a grid. The grid is 8x7 (8 rows, 7 columns). Each player controls 5 identically colored block pieces and 1 ball for a total of 12 pieces on the board. The goal of each player is to move their ball to the opposite side of the board before the opposing player does.
 
-![image](https://github.com/user-attachments/assets/46e726e3-d29d-4944-b942-7222174c9189)
+![image](https://github.com/user-attachments/assets/2e509a30-0e29-42bb-8968-dfe60bfc9a8f)
 
 
 The initial configuration above is where each player’s pieces start, centered on opposite sides of the board, with each player’s ball placed on the center block of each player. Let “white” be the player controlling the pieces at the bottom of the board, and let “black” be the player controlling pieces at the top of the board. White moves first, then black, and they continue taking turns moving until one of them reaches their goal. The first player to move their ball to the opposite of the board is declared the winner.
@@ -21,7 +21,7 @@ after which the player’s turn ends. The board state at the beginning of and at
 
 The block pieces can only move like a knight in chess. In the diagram below, the purple square represents the current location of the block piece, and the blue squares represent valid moves for the piece.
 
-![image](https://github.com/user-attachments/assets/5ba984fd-7336-4a0b-a254-937ad5c11e56)
+![image](https://github.com/user-attachments/assets/c0cec3c3-a870-4877-a85d-1d162e8bf981)
 
 
 It should be noted that a block can only move to unoccupied spaces on the board, and that a block can only be moved if it is not holding a ball.
@@ -38,7 +38,7 @@ We have provided a **class BoardState**, which provides a possible encoding / de
 
 **_Fill in the encoding and decoding functions_**, where the encoded state consists of integer representations, and the decoded state consists of (col, row) representations. We assume the lower left square on the board is (0,0), and the upper right square is (6,7). The encoding / decoding functions take in single positions. The encoding function takes in a tuple (col, row) and returns an integer. The decoding function takes in an integer and returns a tuple (col, row).
 
-![image](https://github.com/user-attachments/assets/f3459b12-357f-46fd-b06a-0061aaff6240)
+![image](https://github.com/user-attachments/assets/0a64d1a4-a050-4e09-9252-e9c5f6a77cb2)
 
 
 The following is the encoded representation of the initial configuration, where the first 6 elements of the array correspond with the white player’s pieces, and the second 6 elements of the array correspond with the black player’s pieces. The bolded underlined entries correspond with the current positions of the player’s balls. White’s ball is currently on the piece occupying position 3, and black’s ball is currently on the piece occupying position 52.
